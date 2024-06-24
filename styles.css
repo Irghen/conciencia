@@ -33,7 +33,6 @@ nav ul li a {
   font-size: larger;
   padding: 14px 16px;
   text-decoration: none;
-  
 }
 
 nav ul li a:hover {
@@ -76,15 +75,55 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 section h2 {
   color: #996cec;
 }
+section h3 {
+  font-weight: bold;
+}
 
+section h4 {
+  font-weight: lighter;
+  font-style: italic;
+};
 
-section p,
-section ul {
+section p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+section ul.juegos {
   color: #6648e7;
+}
+
+ul.juegos {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.juegos li {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ebe0ea;
+}
+
+ul.juegos li a {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #3498db;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+ul.juegos li a:hover {
+  color: #2980b9;
+}
+
+ul.juegos li p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #7f8c8d;
 }
 
 footer {
@@ -95,9 +134,36 @@ footer {
 }
 
 canvas {
+  display: block;
   width: 100%;
   max-width: 600px;
   height: auto;
-  display: block;
   margin: 0 auto;
+}
+
+#botellas {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: 500px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+th {
+  background-color: #996cec;
+  color: #eee;
+  font-weight: bolder;
+  text-align: left;
+}
+
+article {
+border-top: 1px solid #3498db;
 }
